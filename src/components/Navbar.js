@@ -3,15 +3,14 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import "../App.css";
 
-export default function DenseAppBar() {
+export default function ButtonAppBar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" className="navbar">
-        <Toolbar variant="dense">
-          <Typography variant="h6" color="inherit" component="div" className="navbartext">
-            To Do APP
+        <Toolbar>
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} className="navbartext">
+            ToDo App
           </Typography>
         </Toolbar>
       </AppBar>
